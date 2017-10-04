@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>softEng</groupId>
+  <artifactId>softEngEnda</artifactId>
+  <name>softEngEnda</name>
+  <version>0.0.1-SNAPSHOT</version>
+  <url>https://www.dropbox.com/sh/zahopgtlktpm4d6/AADLT7M7n5kDSkIsOIksAu9Za?dl=0</url>
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-shade-plugin</artifactId>
+        <version>3.1.0</version>
+      </plugin>
+    </plugins>
+  </build>
+  <repositories>
+    <repository>
+      <id>dropbox-mvn-repo</id>
+      <name>dropbox-mvn-repo</name>
+      <url>https://www.dropbox.com/sh/zahopgtlktpm4d6/AADLT7M7n5kDSkIsOIksAu9Za?dl=0</url>
+    </repository>
+  </repositories>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>test</scope>
+      <exclusions>
+        <exclusion>
+          <artifactId>hamcrest-core</artifactId>
+          <groupId>org.hamcrest</groupId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+  </dependencies>
+  <distributionManagement>
+    <repository>
+      <id>dropbox-mvn-repo</id>
+      <url>file:///C:/Users/Dan/Dropbox/Public/dropbox-mvn-repo</url>
+    </repository>
+  </distributionManagement>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+</project>
+

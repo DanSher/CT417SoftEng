@@ -1,0 +1,51 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>softEng</groupId>
+  <artifactId>softEngEnda</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <distributionManagement>
+    <repository>
+        <id>internal.repo</id>
+        <name>Temporary Staging Repository</name>
+        <url>C:\Users\Dan\Dropbox\Public\dropbox-mvn-repo\softEng\softEngEnda</url>
+    </repository>
+</distributionManagement>
+ 
+<build>
+ <plugins>
+    <plugin>
+        <artifactId>maven-deploy-plugin</artifactId>
+        <version>2.8.1</version>
+        <configuration>
+               <altDeploymentRepository>internal.repo::default::file://C:\Users\Dan\Dropbox\Public\dropbox-mvn-repo\softEng\softEngEnda</altDeploymentRepository>
+        </configuration>
+    </plugin>
+ </plugins>
+</build>
+
+  <name>softEngEnda</name>
+  <url>https://www.dropbox.com/sh/zahopgtlktpm4d6/AADLT7M7n5kDSkIsOIksAu9Za?dl=0</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+    <dependency>
+    <groupId>junit</groupId>
+    <artifactId>junit</artifactId>
+    <version>4.12</version>
+    <scope>test</scope>
+	</dependency>
+    <dependency>
+	  <groupId>joda-time</groupId>
+	  <artifactId>joda-time</artifactId>
+	  <version>2.9.9</version>
+	</dependency>
+  </dependencies>
+ 
+</project>
